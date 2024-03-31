@@ -83,3 +83,9 @@ def mkyt(videoid):
     with open(ytpath,'wb') as output:
       output.write(th.read())
 
+for v in vdo:
+    print (vdo[v]['id'])
+    print (vdo[v]['title'])
+    mkqr(vdo[v]['id'])
+    mkyt(vdo[v]['id'])
+    mkytqr_bw(vdo[v]['id'], vdo[v]['title'])
